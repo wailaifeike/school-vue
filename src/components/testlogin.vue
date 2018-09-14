@@ -1,4 +1,7 @@
 <template>
+  <div >
+    <!--<div class="note" :style ="note"></div>-->
+
   <el-form :model="ruleForm2"
            :rules="rules2" ref="ruleForm2" label-position="left" label-width="0px"
            class="demo-ruleForm login-container">
@@ -16,6 +19,7 @@
       <!--<el-button @click.native.prevent="handleReset2">重置</el-button>-->
     </el-form-item>
   </el-form>
+  </div>
 </template>
 
 <script>
@@ -136,5 +140,6 @@
     .remember {
       margin: 0px 0px 35px 0px;
     }
+
 
 </style>

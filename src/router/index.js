@@ -43,21 +43,13 @@ export default new Router({
       name: 'dialog',
       component: dialog
     },
-    // {
-    //   path: '/aa',
-    //   name: 'UEditor',
-    //   component: UEditor
-    // },
+
     {
       path: '/editorutils',
       name: 'editorutils',
       component: editorutils
     },
-    // {
-    //   path: '/demo',
-    //   name: 'demo',
-    //   component: demo
-    // },
+
 
   ],
   mode:"history"

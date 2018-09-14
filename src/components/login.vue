@@ -1,7 +1,8 @@
 <template>
-   <div>
-       <div class="form">
-    <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+   <div >
+     <div class="note" :style ="note"></div>
+       <div class="form" >
+         <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
 
       <el-row>
         <el-col :span="8" :offset="8">
@@ -36,7 +37,7 @@
         </el-col>
       </el-row>
     </el-form>
-  </div>
+      </div>
 
    </div>
 </template>
@@ -77,6 +78,13 @@
         }
       };
       return {
+
+        note: {
+          backgroundImage: "url(" + require("../assets/desktop.jpg") + ")",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "25px auto",
+          marginTop: "5px",
+        },
         ruleForm2: {
           pass: '',
           checkPass: '',
